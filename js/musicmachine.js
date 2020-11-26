@@ -153,4 +153,17 @@ $(document).ready(function () {
         // to play the desired note for half a second
         organ.play(note, octave, 0.5);
     }
+
+    $("#songTwoButton").click(function(e) {
+        e.preventDefault();
+        var song =    ["G,5", "G,5","G,5",",","G,5","G,5","G,5", ",", "A,3","A,3","A,4","A,4","G,5","G,5","G,5", "G,5","G,5",",","G,5","G,5","G,5", ",", "A,3","A,3","A,4","A,4","G,5","G,5"];
+        
+        playRecording(song);
+    })
+    $("#songOneButton").click(function(e) {
+        e.preventDefault();
+    var song =    ["G,5","A,5","C,5","F,4","E,4","F,4","G,4","G,3","A,3","A,3","C,4","C,4",/* 2 */ "G,4","A,4","C,4","F,4","E,3","F,3","G,3","G,5","A,5","A,5","C,3","C,3","G,5","A,5","C,5","F,4","E,4","F,4","G,4","G,3","A,3","A,3","C,4","C,4"];
+        
+        playRecording(song);
+    })
 });
